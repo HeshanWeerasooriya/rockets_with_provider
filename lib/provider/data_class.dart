@@ -6,7 +6,7 @@ class DataClass extends ChangeNotifier {
   DataModel? rocket;
   bool loading = false;
 
-  getPostData() async {
+  getRocketData() async {
     loading = true;
     rocket = (await getSingleRocketData())!;
     loading = false;
